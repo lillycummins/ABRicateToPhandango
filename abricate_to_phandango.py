@@ -56,4 +56,4 @@ with open(args.input) as sumfile:
                 continue
         df[gene]= final_coverage_list #replace column with list that has processed hits
       
-df.to_csv(args.output+".tsv", sep="\t", index=False)
+df.to_csv(args.output+".csv", sep=",", index=False)
